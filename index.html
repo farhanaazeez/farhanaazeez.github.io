@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhana – Portfolio</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #ffffff; /* LIGHT BACKGROUND */
+            color: #333;
+        }
+
+        /* NAVBAR */
+        header {
+            position: sticky;
+            top: 0;
+            background: #f0f0f0; /* LIGHT NAVBAR */
+            color: #333;
+            padding: 18px 20px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        /* PROFILE IMAGE */
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #007bff;
+        }
+
+        /* HERO */
+        .hero {
+            height: 80vh;
+            background: #f7f9fc; /* VERY LIGHT BLUE SHADE */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 span {
+            color: #007bff;
+        }
+
+        .btn {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* ABOUT */
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        /* SKILLS */
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .skills ul li {
+            background: #f1f1f1;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 5px solid #007bff;
+            border-radius: 4px;
+        }
+
+        /* PROJECTS */
+        .project-card {
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+            border-left: 5px solid #007bff;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        /* CONTACT */
+        .contact p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* LINKEDIN BUTTON */
+        .linkedin-btn {
+            display: inline-block;
+            background: #0077b5;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .linkedin-btn:hover {
+            background: #005f8c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">Farhana</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <img src="download.jpeg" alt="Farhana Profile Photo" class="profile-img">
+        <h1>Hello, I'm <span>Farhana</span></h1>
+        <p>B.Tech IT Student | Beginner Web Developer</p>
+        <a href="#projects" class="btn">See My Work</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h1>About Me</h1>
+        <p>
+            I'm Farhana AK, a B.Tech IT student at Calicut Institute of Engineering and Technology.
+            I enjoy web development, problem solving, and building beginner-level projects.
+            Iam currently exploring HTML,CSS,Python,Java,and DBMS,and I look forward to gaining
+            real-world experience through internships.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <h1>Skills</h1>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C / C++</li>
+            <li>PHP</li>
+            <li>DBMS</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h1>My Projects</h1>
+
+        <div class="project-card">
+            <h2>DBMS Mini Project</h2>
+            <p>Designed a basic database system using SQL queries and relational tables.</p>
+        </div>
+
+        <div class="project-card">
+            <h2>Python Practice Programs</h2>
+            <p>Created multiple simple automation scripts and programs.</p>
+        </div>
+
+        <div class="project-card">
+            <h2>Portfolio Website</h2>
+            <p>Developed this responsive portfolio using HTML and CSS.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <p>Email: <b>farhanaazeez23@gmail.com</b></p>
+        <p>Location: Calicut, Kerala</p>
+
+        <!-- LINKEDIN BUTTON -->
+        <p>
+            <a class="linkedin-btn" href="http://linkedin.com/in/farhana-ak-881847333" target="_blank">
+                Visit My LinkedIn Profile
+            </a>
+        </p>
+    </section>
+
+</body>
+</html>
